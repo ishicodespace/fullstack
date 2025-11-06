@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(blue,purple);
+    /* background-image: url(https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXRtYzM1dHNmcTB1dGhueTAzMWsyamVqeWVnbno5ejJrZnUxbXI1YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IV7MOCfnm85iRa/giphy.gif); */
+    background-size:contain
+    color: rgb(134, 136, 195);
+    text-align: center;
+    font-family: Orbitron, sans-serif;
+    font-weight: 900;
+}
+.btn{
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    font-family: inherit; /* inherit property */
+    color: rgb(134, 136, 195);
+     font-weight: 900;
+}
+.red{
+    color:red;
+    border-bottom: 7px solid red;
+}
+#logo{
+    width:120px;
+}
