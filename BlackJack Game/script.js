@@ -1,6 +1,4 @@
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
-let cards = [firstCard, secondCard];
+
 let sum = firstCard + secondCard;
 let hasBlackaJack = false //whether or not the user has blackjack
 let isAlive = true //check if player can still play
@@ -19,7 +17,12 @@ let cardsEl = document.getElementById("cards-el");
 let newEl=document.getElementById("new-el")
 
 function startGame() {
-   renderGame();    
+    if (isAlive == true || hasBlackaJack == false) {
+        renderGame();
+        let firstCard = getRandomCard();
+        let secondCard = getRandomCard();
+        let cards = [firstCard, secondCard];
+    }     
 }
 function renderGame() {
     sumEl.textContent = "Sum: " + sum;
@@ -30,7 +33,7 @@ function renderGame() {
     message = "YAY! You have won the Blackjack!";
     hasBlackaJack = true;
   } else {
-    message = "Loser. You are out of the game! 💀";
+      message = "Loser. You are out of the game! 💀\n Start Again";
     isAlive = false;
   }
     messageEl.textContent = message
