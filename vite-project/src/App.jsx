@@ -1,10 +1,10 @@
-import './App.css'
-import ProductTab from './ProductTab.jsx'
-
+import AmazonProductTab from "./AmazonProductTab.jsx";
 
 function App() {
   return (
-    <ProductTab />
-  )
+    <>
+    <AmazonProductTab />
+    </>
+  );
 }
 export default App;
