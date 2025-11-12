@@ -3,7 +3,8 @@ import AmazonProductTab from "./AmazonProductTab.jsx";
 function App() {
   return (
     <>
-    <AmazonProductTab />
+      <h2 style={{ textAlign: "center" }}>BlockBuster Deals | Shop Now</h2>
+      <AmazonProductTab />
     </>
   );
 }
