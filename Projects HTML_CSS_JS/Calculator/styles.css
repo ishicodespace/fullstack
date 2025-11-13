@@ -1,9 +1,11 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Courier New', monospace;
+  font-family: "Courier New", monospace;
+  background-color: black;
 }
 #main {
+  background:linear-gradient(45deg, #383e5f, #080d49, #383e5f);
   border: 2px solid black;
   height: 350px;
   width: 300px;
@@ -11,6 +13,8 @@ body {
   border-radius: 15px;
 }
 .screen {
+  background-color: black;
+  color: white;
   height: 50px;
   width: 80%;
   border: 2px solid black;
@@ -20,21 +24,22 @@ body {
   text-align: right;
 }
 .screen h1 {
-  margin:0;
-  padding: 10px;
+  margin: 0;
+  padding: 13px;
   font-size: 24px;
 }
 .numbers {
-    display: grid;
+  display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin: 0 auto;
   height: 200px;
   width: 250px;
   gap: 10px;
   border-radius: 20px;
-
 }
 button {
+  background-color: black;
+  color: white;
   border-radius: 10px;
   height: 40px;
   width: 100%;
@@ -43,6 +48,6 @@ button {
   border: 2px solid black;
 }
 button:hover {
-  background-color: lightgray;
+  background-color: gray;
   cursor: pointer;
 }
