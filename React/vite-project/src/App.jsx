@@ -1,10 +1,9 @@
-import AmazonProductTab from "./AmazonProductTab.jsx";
-
-function App() {
+import LikeButton from "./LikeButton.jsx";
+import LudoBoard from "./LudoBoard.jsx";
+  function App() {
   return (
     <>
-      <h2 style={{ textAlign: "center" }}>BlockBuster Deals | Shop Now</h2>
-      <AmazonProductTab />
+      <LudoBoard/>
     </>
   );
 }

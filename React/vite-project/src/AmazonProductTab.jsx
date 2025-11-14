@@ -5,8 +5,8 @@ export default function AmazonproductTab() {
     flexWrap: "wrap",
     justifyContent: "center",
     alignItems: "center",
-    
   };
+  
     return (
       <div style={styles}>
       
