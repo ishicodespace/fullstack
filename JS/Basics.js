@@ -9,11 +9,15 @@ let name = "Ishika";
 let size;
 //null: variable intentionally assigned to have no value
 let address = null;
+
+
 //object: key-value pairs
 let person = {
   firstName: "John",
   lastName: "Doe",
 };
+
+
 //array
 let numbers = [1, 2, 3, 4, 5];
 let info = ["Ishika", 21, true]; //mixed array
