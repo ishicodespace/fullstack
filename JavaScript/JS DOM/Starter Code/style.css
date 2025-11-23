@@ -1,4 +1,4 @@
-body {
+/* body {
   font-family: Arial;
 }
 
@@ -6,6 +6,10 @@ body {
   width: 35%;
 }
 
+.green{
+  color: green;
+  text-decoration: dashed underline;
+}
 .box {
   border: 0.25px solid black;
   background-color: lightgray;
@@ -25,4 +29,13 @@ body {
 
 #description {
   background-color: antiquewhite;
+} */
+
+.red{
+color: red;
+}
+
+.box{
+  border: 2px solid black;
+  background-color: pink;
 }
