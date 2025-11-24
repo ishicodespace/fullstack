@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+button{
+    display: block;
+    margin: auto;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 20px;
+}
