@@ -1,3 +1,5 @@
+// async keyword declares an asynchronous function, which returns a Promise.
+
 async function add(a, b) {
     console.log(a + b); //returns a promise
 }
