@@ -7,7 +7,7 @@ body {
   box-shadow: 5px 5px 30px white;
   height: 300px;
   width: 400px;
-  margin: auto;
+  margin: 40px auto;
   padding: 100px;
   background-color: rgb(31, 31, 72);
   background-size: cover;
@@ -35,31 +35,32 @@ button:hover {
   border: 2px solid rgb(50, 157, 109);
 }
 #password1-el {
-  color: white;
+  color: rgb(50, 157, 109);
   height: 20px;
   width: 150px;
   background-color: rgb(42, 42, 92);
   margin-right: 8px;
   padding: 10px;
   border-radius: 5px;
-}
-hr {
-  color: white;
-  height: 2px;
-  background-color: rgb(50, 157, 109);
-  border: none;
-  margin-bottom: 15px;
+  font-weight: bold;
 }
 #password2-el {
-  border-radius: 5px;
-  color: white;
+  color: rgb(50, 157, 109);
   height: 20px;
   width: 150px;
   background-color: rgb(42, 42, 92);
-  margin: 0px;
+  margin-right: 8px;
   padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
 }
 .password {
   display: block;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+hr {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.799);
+  border: none;
+  margin-bottom: 15px;
 }

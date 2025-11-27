@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    color: orange;
+    font-family: cursive;
+}
+button{
+    padding: 10px;
+    border-radius: .5rem;
+    border: none;
+    background-color: orange;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+.stage{
+    font-size: 3rem;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width:300px;
+}

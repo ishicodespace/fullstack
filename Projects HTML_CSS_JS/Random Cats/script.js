@@ -5,39 +5,40 @@ let img = document.createElement("img");
 img.classList.add("catImage");
 
 let url = "https://api.thecatapi.com/v1/images/search";
-let getCatImage = () => {
-  fetch(url)
-    .then((response) => {
-      console.log(response);
-      response.json().then((readableData) => {
-        let imgUrl = readableData[0].url;
-        console.log(imgUrl);
-        img.src = imgUrl;
-        button.after(img);
-      });
-    })
-    .catch((error) => {
-      console.log(error);
+let getCatImage = async () => {
+  try {
+    let response = await fetch(url);
+    let data = await response.json();
+
+    let imgUrl = data[0].url;
+    img.src = imgUrl;
+    //wait for image to load fully before displaying fact
+    await new Promise((resolve) => {
+      img.onload = resolve;
     });
+
+    //add image below button
+    button.after(img);
+  } catch (e) {
+    console.log(e);
+  }
 };
 
-let getCatFact = () => {
-  let fact = document.querySelector("#catFact");
-  let url2 = "https://catfact.ninja/fact?max_length=140";
-  fetch(url2)
-    .then((response) => {
-      console.log(response);
-      response.json().then((readableData) => {
-          p.innerText = readableData.fact;
-            img.after(p);
-      });
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+let getCatFact = async () => {
+  try {
+    let response = await fetch("https://catfact.ninja/fact?max_length=140");
+    let data = await response.json();
+
+    p.innerText = data.fact;
+
+    //add fact below image
+    img.after(p);
+  } catch (e) {
+    console.log(e);
+  }
 };
 
-button.addEventListener("click", () => {
-  getCatImage();
-  getCatFact();
+button.addEventListener("click", async () => {
+  await getCatImage();
+  await getCatFact();
 });

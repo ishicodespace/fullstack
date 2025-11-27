@@ -1,3 +1,6 @@
+//hoppscotch or postman can be used to test api endpoints
+//json - javascript object notation
+//json is not a javascript object, it is a string using javascript object notation 
 //json data is always in string format
 let data = ` {
     "id": "c76a2922-ba4c-4278-baab-44defb631236",
@@ -30,3 +33,5 @@ fetch(url) //console -> network -> spells -> response
   .catch((error) => {
     console.log(error);
   });
+
+  
