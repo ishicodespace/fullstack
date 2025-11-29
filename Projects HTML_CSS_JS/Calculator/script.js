@@ -10,17 +10,14 @@ for (let button of buttons) {
       }
     } else if (button.innerText === "CLS") {
       screenEl.innerText = "";
-    }
-    else if (button.innerText === "n!")
-    {
-        let num = parseInt(screenEl.innerText);
-        let fact = 1;
-        for (let i = 1; i <= num; i++) {
-            fact *= i;
-        }
-        screenEl.innerText = fact;
-    }
-        else {
+    } else if (button.innerText === "n!") {
+      let num = parseInt(screenEl.innerText);
+      let fact = 1;
+      for (let i = 1; i <= num; i++) {
+        fact *= i;
+      }
+      screenEl.innerText = fact;
+    } else {
       screenEl.innerText += button.innerText;
     }
   });
