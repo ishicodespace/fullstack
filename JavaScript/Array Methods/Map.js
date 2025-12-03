@@ -1,8 +1,9 @@
 //map(function definition or function name)
+//returns all the elements after applying the function on each element
 
 let arr = [1, 2, 3, 4, 5];
-let newArr = arr.map((el) => {
-    return el + 2;
+let newArr = arr.map(function(el) {
+    return el + 2; 
 })
 console.log(newArr);
 
