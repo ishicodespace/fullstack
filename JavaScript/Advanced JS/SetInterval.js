@@ -1,5 +1,5 @@
 //waits -> executes -> waits again -> executes again -> so on
-//executes multiple times
+//executes multiple times after every interval of time
 //setInterval(function, timeout)
 
 setInterval(
@@ -14,5 +14,10 @@ let id = setInterval(() => {
 }, 4000);
 
 console.log(id);
-// clearInterval(id); //to stop executing
 
+//to stop setInterval we use clearInterval function
+//clearInterval(intervalID)
+//here interval is cleared after 10 seconds
+setTimeout(() => {
+  clearInterval(id); //to stop executing
+}, 5000);
