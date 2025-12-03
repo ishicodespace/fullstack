@@ -41,6 +41,11 @@ console.log(obj[null]); //null is converted to "null"
 console.log(obj.null);
 // console.log(obj.1); //gives error cause dot does not convert number to string
 
+//add or modify key-value pair
+obj[3] = "three"; //adds new key-value pair
+obj[1] = "ONE"; //modifies existing key-value pair
+console.log(obj); 
+
 //object of objects
 const classInfo = {
   ishika: {
@@ -48,9 +53,14 @@ const classInfo = {
     city: "",
   },
   aarna: {
-    grade: "B",
-  },
+    grade: "B"
+  }
 };
+
+//accessing nested objects
+console.log(classInfo.ishika.grade);  
+// console.log(classInfo[0].grade); //undefined because classInfo[0] does not exist
+//object keys are not indexed like arrays
 
 //array of objects
 const classA = [
@@ -58,3 +68,7 @@ const classA = [
   { name: "aarna", grade: "B" },
   {},
 ];
+
+//accessing array of objects
+console.log(classA[0].name);
+

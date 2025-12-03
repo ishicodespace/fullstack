@@ -70,7 +70,7 @@ if (undefined) {
 // console.error("this is an error message")
 // console.warn("this is a warning message")
 
-//input in javascript
+//alert and prompt in javascript
 // alert("this is an alert")
 // let age = prompt("Enter something: ")
 // console.log("User input is: " + age)

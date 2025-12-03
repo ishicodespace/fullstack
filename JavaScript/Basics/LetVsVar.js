@@ -43,3 +43,9 @@ console.log(x);
 //let does not allow redeclaration of the same variable
 let y = 10;
 // let y = 20; //gives error
+
+
+
+//Q) Why does var show undefined but let and const show ReferenceError when accessed before initialization?
+//A) Because var declarations are hoisted and initialized with undefined, while let and const declarations are hoisted but not initialized. Accessing them before initialization results in a ReferenceError.
+

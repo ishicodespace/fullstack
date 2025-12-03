@@ -40,7 +40,9 @@ console.log(arr); //[3,4,2]
 //splice(start,deleteCount,item0,item1...itemN)
 let c = [1, 2, 3, 4, 5];
 console.log(c.splice(5, 0, 6, 7, 8));
-console.log(c);
+console.log(c); //[1,2,3,4,5,6,7,8]
+console.log(c.splice(2, 3, 10, 11)); //removes 3 elements from index 2 and adds 10,11
+console.log(c); //[1,2,10,11,6,7,8]
 
 //sort: works for strings
 let fruits = ["Banana", "Apple", "Mango", "Pineapple"];
