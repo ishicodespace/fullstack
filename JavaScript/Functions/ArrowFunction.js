@@ -23,6 +23,5 @@ const print = () => {
 //implicit return means when a function is only returning a value
 //we do not need to use the return keyword or curly braces
 //it automatically returns the value
-const mul = (a, b) => (a * b)
+const mul = (a, b) => a * b;
 //no return keyword implicitly (automatically knows what to return)
-

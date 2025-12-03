@@ -1,5 +1,5 @@
 //a function that does one or both:
-//takes one or more functions as arguments
+//takes one or more functions as arguments (callbacks)
 //returns a function
 
 //higher order function that takes function as argument
