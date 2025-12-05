@@ -19,6 +19,7 @@ const ob1 = {
 const ob2 = {
   name: "object 2",
 };
+
 ob1.getThis = getThis;
 ob2.getThis = getThis;
 
