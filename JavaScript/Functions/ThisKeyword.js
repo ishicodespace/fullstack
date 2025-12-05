@@ -22,6 +22,7 @@ const ob2 = {
 ob1.getThis = getThis;
 ob2.getThis = getThis;
 
+// way in JavaScript to add a method to an existing object after the object has been created
 console.log(ob1.getThis()); //here this refers to ob1
 console.log(ob2.getThis()); //here this refers to ob2
 
