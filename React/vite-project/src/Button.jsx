@@ -1,7 +1,5 @@
 function printHello(event) {
-  let p = document.createElement("p");
-  p.textContent = "Hello World!";
-  document.body.appendChild(p);
+  event.preventDefault();
   // Log the event object to the console
   console.log(event);
 }
@@ -12,7 +10,7 @@ export default function Button() {
   return (
     <div>
       <button onMouseOver={printHello}>Click me</button>
-      <p onClick={printBye}>BYEEE</p>
+      <p onClick={printBye}>click yo print bye</p>
     </div>
   );
 }
