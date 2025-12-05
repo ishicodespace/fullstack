@@ -1,14 +1,14 @@
 //the key value pair is always stored in string format in local storage
 let myLeads = [];
 //convert the string to an array
-// myLeads = JSON.parse(myLeads);
-// console.log(typeof myLeads); //object
+//myLeads = JSON.parse(myLeads);
+//console.log(typeof myLeads); //object
 //add another lead to the array
-// myLeads.push("www.secondlead.com");
+//myLeads.push("www.secondlead.com");
 
 //convert the array back to string
-// myLeads = JSON.stringify(myLeads);
-// console.log(typeof myLeads); //string
+//myLeads = JSON.stringify(myLeads);
+//console.log(typeof myLeads); //string
 
 const inputEl = document.querySelector("input");
 const btn = document.querySelector("#input-btn");
@@ -21,7 +21,7 @@ const ulEL = document.querySelector("ul");
 //localStorage.getItem("myLeads");
 //localStorage.clear();
 //localStorage.setItem("myLeads", "www.awesomelead.com");
-// console.log(localStorage.getItem("myLeads"));
+//console.log(localStorage.getItem("myLeads"));
 
 const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
 
@@ -62,10 +62,8 @@ const tabBtn = document.querySelector("#save-tab-btn");
 tabBtn.addEventListener("click", function () {
   //grab the url of the current tab
   chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-     myLeads.push(tabs[0].url);
-     localStorage.setItem("myLeads", JSON.stringify(myLeads));
-     render(myLeads);
+    myLeads.push(tabs[0].url);
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    render(myLeads);
   });
-
-
 });
