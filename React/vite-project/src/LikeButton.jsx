@@ -1,5 +1,6 @@
 import { useState } from "react";
 export default function LikeButton() {
+  //initial value of liked is false
   let [liked, setliked] = useState(false); //initialization
   function toggle() {
     setliked(!liked);
