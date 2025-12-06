@@ -2,7 +2,7 @@
 //expands an iterable (like an array) into individual elements
 //...arr
 
-let arr=[1,2,3,4,5];
+let arr = [1, 2, 3, 4, 5];
 console.log(...arr); //1 2 3 4 5
 
 let arr2 = [...arr, 6, 7, 8];
@@ -16,17 +16,22 @@ let str = "ishika";
 console.log(...str); //i s h i k a
 
 //spread in objects
-let obj={a:1, b:2};
-let obj2={...obj, c:3, d:4};
+let obj = { a: 1, b: 2 };
+
+//adding new properties using spread
+let obj2 = { ...obj, c: 3, d: 4 };
 console.log(obj2); //{a:1, b:2, c:3, d:4}
+
+//updating object property using spread
+console.log({ ...obj, b: 20 }); //{a:1, b:20} b is updated
 
 //rest operator
 //take multiple arguments and bundle them into an array
 //function(...args)
 
 function sum(...nums) {
-    for(let i=0; i<nums.length; i++) {
-        console.log(nums[i]);
-    }
+  for (let i = 0; i < nums.length; i++) {
+    console.log(nums[i]);
+  }
 }
 sum(1, 2, 3, 4, 5);
