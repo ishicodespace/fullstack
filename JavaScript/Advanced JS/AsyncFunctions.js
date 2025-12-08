@@ -30,3 +30,10 @@ greet()
   .catch((error) => {
     console.log(error);
   });
+
+//using await inside an async function
+let fetchData = async () => {
+  let data = await example();
+  console.log("Fetched data:", data);
+};
+fetchData(); //Fetched data: 10
