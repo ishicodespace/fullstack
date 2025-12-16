@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "Todo List",
+  "version": "1.0",
+  "description": "Simple todo list with localStorage",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Todo List"
+  }
+}
