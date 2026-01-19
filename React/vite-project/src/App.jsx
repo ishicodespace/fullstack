@@ -1,9 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LudoBoard from "./LudoBoard.jsx";
-import ToDoList from "./ToDoList.jsx";
+import WeatherApp from "./Weather App/WeatherApp.jsx";
 
 function App() {
-  return <ToDoList />;
+  return (
+     <WeatherApp/>
+  );
 }
 
 export default App;
